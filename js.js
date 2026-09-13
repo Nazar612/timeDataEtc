@@ -11,5 +11,5 @@ console.log(date.toLocaleDateString()
 console.log(date.toLocaleTimeString()
 );
 
-const commencerJsp = new Date("2026-09-19T19:00:00");
+const commencerPromotion = new Date("2026-09-19T19:00:00");
 console.log(commencerJsp - date); 
