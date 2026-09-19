@@ -27,9 +27,12 @@ function startTimer(difference) {
     console.log(days + ":" + hours + ":" + minutes + ":" + secondes);
 }
 
-setInterval(()=> {
+let timertoSubbota = setInterval(()=> {
     const date = new Date();
     const totalTimeToPromo = commencerPromotion - date;
     startTimer(totalTimeToPromo)
-    // console.log(totalTimeToPromo);
+    if(totalTimeToPromo < 0) {
+        clearInterval(timertoSubbota);
+        console.log("timer stop");
+    };
 },1000)
